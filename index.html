@@ -38,24 +38,49 @@
 	}
 	
 	.cta {
-		background: #444;
-		color: #ddd;
+		background: #38aadd;
+		color: #fff;
 		transition: all 0.5s;
 	}
 	
 	.cta:hover {
-		background: #ddd;
-		color: #444;
+		background: #fff;
+		color: #38aadd;
 	}
 	
 	.topBot {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#13eef9+1,38aadd+26,1e5799+38,38aadd+50,1e5799+63,38aadd+76,13eef9+100&0+0,1+0,1+19,1+80,1+100 */
-background: -moz-linear-gradient(left,  rgba(19,238,249,1) 0%, rgba(19,238,249,1) 1%, rgba(46,189,229,1) 19%, rgba(56,170,221,1) 26%, rgba(30,87,153,1) 38%, rgba(56,170,221,1) 50%, rgba(30,87,153,1) 63%, rgba(56,170,221,1) 76%, rgba(50,181,226,1) 80%, rgba(19,238,249,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(46,189,229,1) 19%,rgba(56,170,221,1) 26%,rgba(30,87,153,1) 38%,rgba(56,170,221,1) 50%,rgba(30,87,153,1) 63%,rgba(56,170,221,1) 76%,rgba(50,181,226,1) 80%,rgba(19,238,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(46,189,229,1) 19%,rgba(56,170,221,1) 26%,rgba(30,87,153,1) 38%,rgba(56,170,221,1) 50%,rgba(30,87,153,1) 63%,rgba(56,170,221,1) 76%,rgba(50,181,226,1) 80%,rgba(19,238,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#13eef9+1,38aadd+10,1e5799+25,13eef9+50,1e5799+75,38aadd+90,13eef9+100&0+0,1+0,1+19,1+80,1+100 */
+background: -moz-linear-gradient(left,  rgba(19,238,249,1) 0%, rgba(19,238,249,1) 1%, rgba(56,170,221,1) 10%, rgba(40,120,180,1) 19%, rgba(30,87,153,1) 25%, rgba(19,238,249,1) 50%, rgba(30,87,153,1) 75%, rgba(39,115,176,1) 80%, rgba(56,170,221,1) 90%, rgba(19,238,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(56,170,221,1) 10%,rgba(40,120,180,1) 19%,rgba(30,87,153,1) 25%,rgba(19,238,249,1) 50%,rgba(30,87,153,1) 75%,rgba(39,115,176,1) 80%,rgba(56,170,221,1) 90%,rgba(19,238,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(56,170,221,1) 10%,rgba(40,120,180,1) 19%,rgba(30,87,153,1) 25%,rgba(19,238,249,1) 50%,rgba(30,87,153,1) 75%,rgba(39,115,176,1) 80%,rgba(56,170,221,1) 90%,rgba(19,238,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', endColorstr='#13eef9',GradientType=1 ); /* IE6-9 */
 
 	}
+	
+	
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0%   {background: url('images/bg1.png');}
+    25%   {background: url('images/bg2.png');}
+    50%   {background: url('images/bg3.png');}
+    75%   {background: url('images/bg4.png');}
+    100%   {background: url('images/bg1.png');}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {background: url('images/bg1.png');}
+    25%   {background: url('images/bg2.png');}
+    50%   {background: url('images/bg3.png');}
+    75%   {background: url('images/bg4.png');}
+    100%   {background: url('images/bg1.png');}
+}
+
+.jumbotron:hover{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
 	</style>
 	
     <title>Svoot</title>
@@ -95,7 +120,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', end
       </div>
 
       <!-- Jumbotron -->
-      <div class="jumbotron" style="margin-top: 150px; margin-bottom: 150px;">
+      <div class="jumbotron" style="margin-top: 40px; height: 435px; background: url('images/bg1.png');">
+	  <br><br><br><br><br><br>
         <p class="lead">We are a creative agency, operating in Mumbai.</p>
         <p><a class="btn cta" href="contact.html" role="button">Let's build something!</a></p>
       </div>
