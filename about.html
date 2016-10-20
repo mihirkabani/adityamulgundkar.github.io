@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+	<link rel="manifest" href="images/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<style>
+	.footerImage {
+		width: 120px;
+		height: 120px;
+		margin: 10px;
+		margin-top: 0px;
+		-webkit-border-radius: 50%;
+		border: 5px solid #999;
+	}
+	
+	.cta {
+		background: #38aadd;
+		color: #fff;
+		transition: all 0.5s;
+	}
+	
+	.cta:hover {
+		background: #fff;
+		color: #38aadd;
+	}
+	
+	.topBot {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#13eef9+1,38aadd+10,1e5799+25,13eef9+50,1e5799+75,38aadd+90,13eef9+100&0+0,1+0,1+19,1+80,1+100 */
+background: -moz-linear-gradient(left,  rgba(19,238,249,1) 0%, rgba(19,238,249,1) 1%, rgba(56,170,221,1) 10%, rgba(40,120,180,1) 19%, rgba(30,87,153,1) 25%, rgba(19,238,249,1) 50%, rgba(30,87,153,1) 75%, rgba(39,115,176,1) 80%, rgba(56,170,221,1) 90%, rgba(19,238,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(56,170,221,1) 10%,rgba(40,120,180,1) 19%,rgba(30,87,153,1) 25%,rgba(19,238,249,1) 50%,rgba(30,87,153,1) 75%,rgba(39,115,176,1) 80%,rgba(56,170,221,1) 90%,rgba(19,238,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(19,238,249,1) 0%,rgba(19,238,249,1) 1%,rgba(56,170,221,1) 10%,rgba(40,120,180,1) 19%,rgba(30,87,153,1) 25%,rgba(19,238,249,1) 50%,rgba(30,87,153,1) 75%,rgba(39,115,176,1) 80%,rgba(56,170,221,1) 90%,rgba(19,238,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', endColorstr='#13eef9',GradientType=1 ); /* IE6-9 */
+
+	}
+	
+	
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0%   {background: url('images/bg1.png');}
+    25%   {background: url('images/bg2.png');}
+    50%   {background: url('images/bg3.png');}
+    75%   {background: url('images/bg4.png');}
+    100%   {background: url('images/bg1.png');}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {background: url('images/bg1.png');}
+    25%   {background: url('images/bg2.png');}
+    50%   {background: url('images/bg3.png');}
+    75%   {background: url('images/bg4.png');}
+    100%   {background: url('images/bg1.png');}
+}
+
+.jumbotron:hover{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+.blu li a:hover{
+	color: #38aadd;
+}
+
+.blocky i {
+	padding: 20px;
+	width: 40%;
+	border-radius: 50%;
+	font-size: 100px;
+	background: white;
+	color: #38aadd;
+	border: 4px solid #38aadd;
+}
+
+.blocky i:hover {
+	background: #38aadd;
+	color: white;
+}
+	</style>
+	
+    <title>Svoot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  
+  <div class="navbar2 navbar-inverse navbar-fixed-top2 topBot" style=" border:none; height:5px; margin-top: -20px;"> 
+  </div>
+	
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted"><img src="images/logo-black-h54.png"></h3>
+        <nav>
+          <ul class="nav nav-justified blu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+	  
+	  <div class="container">
+		<h2>
+		
+		<br>
+		About Us
+		</h2>
+		<center>
+		<div class="row">
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-code"></i></div>
+			<h4>
+			Web Development
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-android"></i></div>
+			<h4>
+			Android Development
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-windows"></i></div>
+			<h4>
+			Enterprise Software
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+			</div>
+			<br><br>
+			<div class="row">
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-apple"></i></div>
+			<h4>
+			iOS Development
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-asterisk"></i></div>
+			<h4>
+			Brand Identity/ Graphic Design
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+			<div class="col-lg-4">
+			<div class="blocky"><i class="fa fa-globe"></i></div>
+			<h4>
+			SEO Services
+			</h4>
+			<p>
+			Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+			</p>
+			</div>
+		</div>
+		</center>
+	  </div>
+
+
+
+      <!-- Site footer -->
+      <footer class="footer">
+	        <div class="row">
+        <div class="col-lg-4">
+		  <img src="images/adi.jpg" class="footerImage" style="float: left;">
+          <p>My name is Aditya. I'm a student, also currently working on NFV at IIT-B. I help businesses and individuals create awesome products.
+		  P.S. I've been to NASA.</p>
+        </div>
+		<div class="col-lg-4">
+		<center>
+		<img src="images/logo-black-h54.png" style="margin: 15px;">
+          <p>A creative Agency.</p>
+        </center>
+		</div>
+		<div class="col-lg-4">
+		  <img src="images/mihir.jpg" class="footerImage" style="float: right;">
+          <p>My name is Mihir. I've had experience building things that can walk, run and fly. Robots, basically. Robots. And I'm a good product dev - Try me?<p>
+        </div>
+      </div>
+	  <br>
+        <center><p><big><i class="fa fa-code"></i></big> with <i class="fa fa-heart" style="color: red;"></i> by <a href="http://www.svoot.com"><img src="images/credit.png"></a></p></center>
+      </footer>
+
+    </div> <!-- /container -->
+
+  <div class="navbar2 navbar-inverse navbar-fixed-top2 topBot" style="border:none; height:6px; margin-top: 12px; bottom:0;"> 
+  </div>
+	
+  </body>
+</html>
