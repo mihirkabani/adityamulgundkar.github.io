@@ -84,6 +84,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', end
 .blu li a:hover{
 	color: #38aadd;
 }
+
+.nav-justified li a {
+background: #000;
+}
+
+.hone {
+    width: 270px;
+    /* background: #98aadd; */
+    height: 70px;
+    padding: 5px;
+}
+.htwo {
+    width: 280px;
+    border: 4px rgba(0,0,0,0) solid;
+    height: 80px;
+    padding: 1px;
+}
+.htwo:hover {
+    -webkit-animation: mymove2 0.5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove2 0.5s infinite;
+}
+
+@-webkit-keyframes mymove2 {
+    0% {border-left: 4px #38aadd solid;}
+    33% {border-top: 4px #38aadd solid;}
+    66% {border-right: 4px #38aadd solid;}
+    100% {border-bottom: 4px #38aadd solid;}
+}
+@keyframes mymove2 {
+    0% {border-left: 4px #38aadd solid;}
+    33% {border-top: 4px #38aadd solid;}
+    66% {border-right: 4px #38aadd solid;}
+    100% {border-bottom: 4px #38aadd solid;}
+}
+
 	</style>
 	
     <title>Svoot</title>
@@ -95,7 +130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', end
     <link href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+    <link href="css/justified-nav.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
@@ -163,7 +198,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13eef9', end
       <div class="jumbotron" style="margin-top: 40px; height: 435px; background: url('images/bg1.png');">
 	  <br><br><br><br><br><br>
         <p class="lead">We are a creative agency, operating in Mumbai.</p>
-        <p><a class="btn cta" href="contact.html" role="button">Let's build something!</a></p>
+        <center><div class="htwo"><div class="hone"><a class="btn cta" href="contact.html" role="button">Let's build something!</a></div></div><center>
       </div>
 
 
